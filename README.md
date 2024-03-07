@@ -4,11 +4,11 @@
 
 `en-US`: This repository shows the code from my participation in the [Rinha de Backend](https://twitter.com/rinhadebackend) 2024 Q1 organized by [@zanfranceschi](https://twitter.com/zanfranceschi). In this edition the topic was concurrency management on banking transactions following some criterias (e.g.: `1.5` cpu and `550Mb` ram for all the infrastructure). You can find out more about on [Rinha de Backend repository](https://github.com/zanfranceschi/rinha-de-backend-2024-q1), where in [this link](https://github.com/felipeoriani/rinha-de-backend-2024-q1) you will find my fork.
 
-**Note**: _Rinha de Backend_ means something like _Backend Fight_.
+:heavy_check_mark: _Rinha de Backend_ means something like _Backend Fight_.
 
-**Warning**: _This code was designed speficically for the Rinha de Backend and it is not recommened to be part of any prod/final solution. It is just fun!_
+⚠️ _This code was designed speficically for the Rinha de Backend and it is not recommened to be part of any prod/final solution. It is just fun!_
 
-Lessons Learnt:
+💻 Lessons Learnt:
 - Windows dynamic ports can block the Load Testing after some time;
 - Handle concurrency in Postgres with `pg_advisory_xact_lock` vs `FOR UPDATE`;
 - `ConnectionPool` configurations for `Postgres`, super flexible;
@@ -27,7 +27,7 @@ Lessons Learnt:
   </tr>
 </table>
 
-## How to Run
+## 🏃 How to Run
 
 Build the docker image for the project and up all the dependencies on the `docker-compose.yml` including `Postgres` database and `Nginx` load balancer including all its configurations.
 
@@ -63,7 +63,7 @@ Finally, you can down all the resources and destroy the container image by runni
 sh down.sh
 ```
 
-## Load Testing Results
+## 🧪 Load Testing Results
 
 Once I was developing this project a Load Test using Gatling ran in order to evaluate the infrastructure. You can check the results on the image bellow:
 
